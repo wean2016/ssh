@@ -66,4 +66,10 @@
 		<property name="userDao" ref="userDao"></property>
     </bean>
 
+	<!--配置struts2的Action,并且注入userService-->
+	<bean id="userAction" class="com.lyq.ssh.action.UserAction">
+		<property name="userService" ref="userService"></property>
+	</bean>
+
+
 </beans>
