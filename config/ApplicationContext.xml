@@ -43,7 +43,7 @@
         <property name="sessionFactory" ref="sessionFactory"></property>
 	</bean>
 
-    <!--配置通知-->
+    <!--配置事务-->
     <tx:advice id="txAdvice" transaction-manager="txManager" >
         <tx:attributes>
             <tx:method name="save*" propagation="REQUIRED"/>
